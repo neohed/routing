@@ -3,10 +3,10 @@ import {Link} from "react-router-dom";
 
 const data = [
     {
-        name: 1,
+        name: 'First',
         optional: 'Additional info'
     }, {
-        name: 2,
+        name: 'Second',
     },
 ]
 
@@ -19,7 +19,7 @@ const List = () => {
                         key={name}
                     >
                         <Link
-                            to={`/edit/${name}${optional === undefined ? '' : '/' + optional}`}
+                            to={`/edit/${name}`}
                         >
                             {
                                 name
